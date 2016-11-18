@@ -20,6 +20,8 @@
     font-style: normal;
 
 }
+
+
 *,
 *::before,
 *::after {
@@ -43,6 +45,17 @@ h2{
   font-family: "bebasregular";
   text-transform: uppercase;
 }
+hr {
+  margin: 25px 0px 25px 0px;
+  border: 3px solid #EB4155;
+  height: 3px;
+}
+ul{
+  margin-left: 50px;
+}
+span{
+  display: inline-block;
+}
 .fruitlogo{
   float: left;
 }
@@ -55,15 +68,24 @@ h2{
   /*text-shadow: #FFA300 4px 3px 0;*/
 
 }
+a{
+  color: #4BBFE7;
+  text-decoration: none;
+}
+a:hover{
+  color: #EB4155;
+}
+
 .navigation{
   float: right;
 }
 .navigation span{
   padding-left: 20px;
   padding-right: 20px;
-  color: #294495;
+  color: #EB4155;
   border-left: 1px solid #FFA300;
 }
+
 .navigation span:first-child{
   border: none;
 }
@@ -75,21 +97,22 @@ h2{
   padding: 22px;
 }
 .panel{
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 }
 .col{
   width: 25%;
-  min-width: 300px;
+  min-width: 200px;
   padding: 20px;
   text-align: center;
   float: left;
   height: 400px;
-  /*height: 320px;*/
+}
+.colorTransition{
+  transition: color 0.5s ease;
 }
 .shoutout{
   color: #0B2B69;
-  transition: color 0.5s ease;
 }
 .col h2{
   color: #fff;
@@ -99,31 +122,95 @@ h2{
   padding: 10px
 }
 .col img:hover{
-  filter: blur(20px);
+  filter: blur(10px);
 }
 .col img:hover + .shoutout{
-    /*height: 250px;*/
     color: white;
 }
-#apple{
+.col.apple{
   background-color: #FFA300;
 }
-#banana{
+.col.banana{
   background-color: #4BBFE7;
 }
-#pineapple{
+.col.pineapple{
   background-color: #FFEA5C;
 }
-#orange{
+.col.orange{
   background-color: #EB4155;
 }
 .fruits{
   padding-top: 75px;
 }
+.banana.panel{
+  background-color: #FFE118;
+}
 
+#banana{
+  text-align: center;
+}
+.feature, .details{
+  padding: 20px;
+  position: relative;
+}
+.feature img{
+
+}
+.feature{
+  float: left;
+  text-align: center;
+  width: 50%;
+
+}
+.details{
+  float: right;
+  width: 50%;
+  color: #fff;
+  color: #EB4155;
+}
+.heart-healthy{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+.absolute{
+  height: 50px !important;
+}
+.banana.panel .feature{
+
+}
+.details h2{
+  font-size: 30pt;
+  color: #EB4155;
+}
 .feature img{
   height: 300px;
 }
+.gallery {
+  text-align: center;
+}
+.growHover{
+  -webkit-transition:all 0.1s ease-out;
+  -moz-transition:all 0.1s ease-out;
+  -ms-transition:all 0.1s ease-out;
+  -o-transition:all 0.1s ease-out;
+  transition:all 0.1s ease-out;
+  z-index: 800;
+}
+.growHover:hover{
+  -webkit-transform:scale(1.3);
+  -moz-transform:scale(1.3);
+  -ms-transform:scale(1.3);
+  -o-transform:scale(1.3);
+  transform:scale(1.3);
+}
 .gallery img{
-  height: 35px;
+  height: 45px;
+  margin-left: 30px;
+
+}
+
+
+.contact.panel{
+  background-color: #4BBFE7;
 }
