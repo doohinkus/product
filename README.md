@@ -12,7 +12,7 @@ _A colorful page dedicated to nutritious fruit._
 
 * _Clone repository._
 * _Double click "index.html"_
-* _Or view the [Quiz](https://doohinkus.github.io/product/) now._
+* _Or view the [Fruit Project](https://doohinkus.github.io/product/) now._
 
 
 _If "index.html" fails to open when double clicked, then drag the file into your favorite browser._
