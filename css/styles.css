@@ -25,9 +25,9 @@
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 *{
   margin: 0;
@@ -44,6 +44,7 @@ body{
 h2{
   font-family: "bebasregular";
   text-transform: uppercase;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 hr {
   margin: 25px 0px 25px 0px;
@@ -52,21 +53,39 @@ hr {
 }
 ul{
   margin-left: 50px;
+  text-align: left;
+}
+p{
+  text-align: left;
 }
 span{
   display: inline-block;
 }
+label{
+  display: block;
+  color: #EB4155;
+  margin-top: 20px;
+}
 .fruitlogo{
   float: left;
+}
+.logo{
+  height: 75px;
+  vertical-align: middle;
+  float: left;
+  margin-top: -20px;
+
 }
 .fruitlogo h2{
   color: #EB4155;
   font-size: 24pt;
   font-weight: lighter;
-  font-family: "junebugregular"
+  font-family: "junebugregular";
+  display:inline-block;
+  z-index:99999;
+
   /*background-color: #b8b8b8;*/
   /*text-shadow: #FFA300 4px 3px 0;*/
-
 }
 a{
   color: #4BBFE7;
@@ -76,6 +95,36 @@ a:hover{
   color: #EB4155;
 }
 
+form{
+  margin-bottom: 50px;
+}
+button{
+  display: block;
+  margin:auto;
+  padding: 10px;
+  width: 150px;
+  border-radius: 40px;
+  color: #4BBFE7;
+  border: none;
+  background-color: #FFE118;
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  transition: background-color 0.1s ease;
+  font-size: 12pt;
+}
+button:hover{
+  background-color: #EB4155;
+  color: white;
+}
+input{
+  width: 500px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: none;
+  /*border: 2px solid #EB4155;*/
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+
+}
 .navigation{
   float: right;
 }
@@ -95,10 +144,23 @@ a:hover{
   height: 75px;
   position: fixed;
   padding: 22px;
+  z-index: 9999;
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 .panel{
   overflow: hidden;
   width: 100%;
+  height: 500px;
+  padding-top: 50px;
+  text-align: center;
+
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
 }
 .col{
   width: 25%;
@@ -106,10 +168,12 @@ a:hover{
   padding: 20px;
   text-align: center;
   float: left;
-  height: 400px;
+  height: 500px;
 }
+
 .colorTransition{
   transition: color 0.5s ease;
+  /*transition: background-color 0.5s ease;*/
 }
 .shoutout{
   color: #0B2B69;
@@ -144,6 +208,29 @@ a:hover{
 }
 .banana.panel{
   background-color: #FFE118;
+  width: 100%;
+}
+.apple.panel{
+    background-color: #FFA300;
+}
+
+.apple.panel .feature{
+  float: right;
+}
+.apple.panel .details{
+  float: left;
+}
+.orange.panel{
+  background-color: #FFEA5C;
+}
+.orange.panel .feature{
+  float: right;
+}
+.orange.panel .details{
+  float: left;
+}
+.pineapple.panel{
+  background-color: #4BBFE7;
 }
 
 #banana{
@@ -210,7 +297,16 @@ a:hover{
 
 }
 
-
 .contact.panel{
   background-color: #4BBFE7;
+  color: #fff;
+}
+.footer.panel{
+  background-color: #FFA300;
+  color: #fff;
+  height: 200px;
+
+}
+.footer.panel p{
+  text-align: center;
 }
