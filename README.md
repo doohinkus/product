@@ -27,7 +27,7 @@ _If you have any issue with this code, please contact me._
 
 ## Technologies Used
 
-_HTML, CSS, and Bootstrap. All effects are achieved with CSS, '''NO JAVASCRIPT WHATSOEVER!!!!''' <big>Make sure you rollover the fruit images at the top of the page</big>._
+_HTML, CSS, and Bootstrap. All effects are achieved with **CSS, NO JAVASCRIPT WHATSOEVER!!!! Make sure you rollover the fruit images at the top of the page.**_
 
 ### License
 
