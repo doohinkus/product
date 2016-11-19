@@ -19,7 +19,7 @@ _If "index.html" fails to open when double clicked, then drag the file into your
 
 ## Known Bugs
 
-_The links at the top of the menu do not work BECAUSE I'm working a pure CSS smooth scrolling feature. I am unsure about the best way to use the link IDs, therefore I left them black. Clicking on any link brings you back to the top of the page, not the content area._
+_There are no known bugs at this time._
 
 ## Support and contact details
 
@@ -27,7 +27,7 @@ _If you have any issue with this code, please contact me._
 
 ## Technologies Used
 
-_HTML, CSS, and Bootstrap. All effects are achieved with CSS, no javascript whatsoever!_
+_HTML, CSS, and Bootstrap. All effects are achieved with CSS, NO JAVASCRIPT WHATSOEVER!!!!_
 
 ### License
 
