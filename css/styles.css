@@ -363,4 +363,5 @@ a[id="top"]:target ~ .bigPanel{
 }
 .footer.panel p{
   text-align: center;
+  padding: 5px;
 }
