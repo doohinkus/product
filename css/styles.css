@@ -154,27 +154,43 @@ input[type="text"]{
   z-index: 9999;
   box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
-a[id="banana"]:target ~ * .panel{
+
+a[id="orange"]:target ~ .bigPanel{
+    -webkit-transform: translateY(-1950px);
+    transform: translateY(-1950px );
+}
+a[id="banana"]:target ~ .bigPanel{
     -webkit-transform: translateY(0px);
     transform: translateY(0px );
 }
-a[id="orange"]:target ~ * .panel{
-
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+a[id="pineapple"]:target ~ .bigPanel{
+    -webkit-transform: translateY(-1450px);
+    transform: translateY(-1450px);
 }
 
-a[id="apple"]:target ~ * .panel{
-    -webkit-transform: translateY()-500px);
-    transform: translateY(-500px );
+a[id="banana"]:target ~ .bigPanel{
+    -webkit-transform: translateY()-450px);
+    transform: translateY(-450px );
 }
-a[id="pineapple"]:target ~ * .panel{
-    -webkit-transform: translateY()-1500px);
-    transform: translateY(-1500px );
+a[id="apple"]:target ~ .bigPanel{
+    -webkit-transform: translateY()-950px);
+    transform: translateY(-950px );
 }
-a[id="email"]:target ~ * .panel{
-    -webkit-transform: translateY()-2500px);
-    transform: translateY(-2500px );
+a[id="contact"]:target ~ .bigPanel{
+    -webkit-transform: translateY()-2425px);
+    transform: translateY(-2425px );
+}
+a[id="top"]:target ~ .bigPanel{
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px );
+}
+.bigPanel {
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .panel{
@@ -184,12 +200,6 @@ a[id="email"]:target ~ * .panel{
   padding-top: 50px;
    z-index:0;
   text-align: center;
-  -webkit-transform: translateZ( 0 );
-  transform: translateZ( 0 );
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 
 }
 .col{
