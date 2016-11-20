@@ -1,4 +1,15 @@
 @font-face {
+    font-family: 'hvd_comic_serif_proregular';
+    src: url('HVD_Comic_Serif_Pro-webfont.eot');
+    src: url('HVD_Comic_Serif_Pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('HVD_Comic_Serif_Pro-webfont.woff') format('woff'),
+         url('HVD_Comic_Serif_Pro-webfont.ttf') format('truetype'),
+         url('HVD_Comic_Serif_Pro-webfont.svg#hvd_comic_serif_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'junebugregular';
     src: url('JUNEBUG_-webfont.eot');
     src: url('JUNEBUG_-webfont.eot?#iefix') format('embedded-opentype'),
@@ -32,7 +43,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "bebasregular";
+  font-family: "hvd_comic_serif_proregular";
 }
 html, body{
   height:100%;
@@ -46,6 +57,8 @@ body{
 }
 h2{
   font-family: "bebasregular";
+  font-family: "hvd_comic_serif_proregular";
+  font-weight: normal;
   text-transform: uppercase;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 
@@ -317,8 +330,8 @@ a[id="top"]:target ~ .bigPanel{
 .absolute{
   height: 50px !important;
 }
-.banana.panel .feature{
-
+#apple-details, #apple-details h2{
+  color: #fff;
 }
 .details h2{
   font-size: 30pt;
