@@ -68,6 +68,7 @@ hr {
   margin: 25px 0px 25px 0px;
   border: 3px solid #EB4155;
   height: 3px;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
 }
 ul{
   margin-left: 50px;
@@ -99,19 +100,20 @@ button{
   display: block;
   margin:auto;
   padding: 10px;
-  padding-top: 15px;
+  padding-top: 12px;
   width: 150px;
   border-radius: 40px;
-  color: #4BBFE7;
+  color: #fff;
   border: none;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
+  -webkit-transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
   background-color: #FFE118;
-  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
-  /*transition: background-color 0.1s ease;*/
   font-size: 12pt;
 }
 button:hover{
   background-color: #EB4155;
-  color: white;
+
 }
 input[type="text"]{
   font-family: sans-serif;
@@ -122,9 +124,12 @@ input[type="text"]{
   border: none;
   padding-left: 10px;
   font-size: 14pt;
-  /*border: 2px solid #EB4155;*/
-  /*box-shadow: 3px 3px 0px rgba(0,0,0,0.2);*/
-
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
+  -webkit-transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
+}
+input[type="text"]:focus{
+  background-color: #FFEA5C;
 }
 
 .fruitlogo{
@@ -214,7 +219,7 @@ a[id="top"]:target ~ .bigPanel{
   width: 100%;
   height: 500px;
   padding-top: 50px;
-   z-index:0;
+  z-index:0;
   text-align: center;
 
 }
@@ -245,7 +250,7 @@ a[id="top"]:target ~ .bigPanel{
   filter: blur(10px);
 }
 .col img:hover + .shoutout{
-    color: white;
+  color: white;
 }
 .col.apple{
   background-color: #FFA300;
@@ -267,7 +272,7 @@ a[id="top"]:target ~ .bigPanel{
   width: 100%;
 }
 .apple.panel{
-    background-color: #FFA300;
+  background-color: #FFA300;
 }
 
 .apple.panel .feature{
