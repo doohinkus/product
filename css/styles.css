@@ -221,11 +221,10 @@ a[id="top"]:target ~ .bigPanel{
   padding-top: 50px;
   z-index:0;
   text-align: center;
-
 }
 .col{
   width: 25%;
-  min-width: 200px;
+  min-width: 12%;
   padding: 20px;
   text-align: center;
   float: left;
@@ -234,7 +233,6 @@ a[id="top"]:target ~ .bigPanel{
 
 .colorTransition{
   transition: color 0.5s ease;
-  /*transition: background-color 0.5s ease;*/
 }
 .shoutout{
   color: #0B2B69;
@@ -372,11 +370,13 @@ a[id="top"]:target ~ .bigPanel{
 .contact.panel{
   background-color: #4BBFE7;
   color: #fff;
+
+
 }
 .footer.panel{
   background-color: #FFA300;
   color: #fff;
-  height: 200px;
+  height: 300px;
 
 }
 .footer.panel p{
