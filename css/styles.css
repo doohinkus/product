@@ -45,6 +45,29 @@
   padding: 0;
   font-family: "hvd_comic_serif_proregular";
 }
+
+.fruitlogo h2::before{
+  content: "";
+  float: left;
+  display: inline-block;
+  height: 75px;
+  margin-top: -25px;
+  width: 55px;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.footer h2::after{
+  content: "";
+  margin:auto;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/css.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 html, body{
   height:100%;
 }
